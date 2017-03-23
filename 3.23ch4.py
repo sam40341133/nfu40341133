@@ -56,8 +56,6 @@ x_evens = list_evener(xs)
 x_product = reduce(multiply, xs) # = 1 * 2 * 3 * 4 = 24
 list_product = partial(reduce, multiply) # *function* that reduces a list
 x_product = list_product(xs)
-
-
 def doubler(f):
     def g(x):
         return 2 * f(x)
