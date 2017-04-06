@@ -1,7 +1,6 @@
 from __future__ import division
-from collections import Counter
-import matplotlib.pyplot as plt
 import math, random
+import matplotlib.pyplot as plt
 
 def random_kid():
     return random.choice(["boy", "girl"])
@@ -26,6 +25,7 @@ for _ in range(10000):
 
 print "P(both | older):", both_girls / older_girl # 0.514 ~ 1/2
 print "P(both | either): ", both_girls / either_girl # 0.342 ~ 1/3
+
 
 def normal_pdf(x, mu=0, sigma=1):
     sqrt_two_pi = math.sqrt(2 * math.pi)
